@@ -1,0 +1,138 @@
+@import '_variables-fonts';
+
+html{
+    padding: 0;
+    color: $color-text;
+}
+body{
+    margin: 0;
+    background-color: $color-bg;
+}
+.curvyfont{
+    font-family: $FontCurvy;
+}
+header{
+    position:fixed;
+    z-index: 100;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-wine;
+    padding: 0 20px;
+    .logobox{
+        margin: 5px;
+    }
+    nav{
+        margin: 0 40px;
+        display: inline-block;
+        a{
+            color: $color-text;
+            font-family: $FontStraight;
+            text-decoration: none;
+            margin: 0;
+            font-size: 17px;
+            padding: 15px 15px;
+            &:hover{
+                transition: $transition-ease;
+                color: $color-accent;
+            }
+        }
+    }
+}
+.footer {
+  background-color: $color-blockbg;
+  color: $color-text;
+  padding: 60px 0 20px;
+  font-family: $FontStraight; // Замени на шрифт своего проекта
+  border-top: 1px solid rgba($color-accent, 0.2);
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 40px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__brand {
+    .footer__logo {
+      height: 40px;
+      margin-bottom: 20px;
+    }
+    .footer__description {
+      font-size: 14px;
+      line-height: 1.6;
+      opacity: 0.8;
+    }
+  }
+
+  &__title {
+    color: $color-accent;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: 12px;
+      font-size: 15px;
+
+      a {
+        color: inherit;
+        text-decoration: none;
+        transition: $transition-ease;
+        opacity: 0.8;
+
+        &:hover {
+          color: $color-accent;
+          opacity: 1;
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+
+  &__icons {
+    display: flex;
+    gap: 15px;
+    
+    a {
+      color: $color-text;
+      text-decoration: none;
+      border: 1px solid rgba($color-accent, 0.5);
+      padding: 8px 12px;
+      font-size: 12px;
+      transition: $transition-ease;
+
+      &:hover {
+        background-color: $color-accent;
+        color: $color-blockbg;
+      }
+    }
+  }
+
+  &__bottom {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgba($color-text, 0.1);
+    text-align: center;
+    font-size: 13px;
+    opacity: 0.6;
+  }
+}

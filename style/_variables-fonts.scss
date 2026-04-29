@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Farabee';
+    src: url('../fonts/Farabee Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'FarabeeStraight';
+    src: url('../fonts/Farabee Straight Regular.ttf') format('truetype');
+}
+$FontCurvy: 'Farabee', sans-serif;
+$FontStraight: 'FarabeeStraight', sans-serif;
+$color-wine: #893030;
+$color-bg: #4A2727;
+$color-blockbg: #2A1616;
+$color-blockbg-transparent: #2a1616c7;
+$color-text: #FFFFFF;
+$color-trs-black: rgba(0,0,0,.5);
+$color-accent:#F4A460;/*#FFD700;*/ /*#d7bc95;*/
+$transition-ease: all 0.3s ease;

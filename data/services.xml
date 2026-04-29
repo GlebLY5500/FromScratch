@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<services>
+
+    <service>
+        <id>1</id>
+        <title>Мужской костюм</title>
+        <description>Классические деловые костюмы (двойки, тройки) по индивидуальным меркам. Ручная работа и премиальные ткани.</description>
+        <price>1500</price>
+        <category>Индивидуальный пошив</category>
+    </service>
+    <service>
+        <id>2</id>
+        <title>Вечерние и свадебные платья</title>
+        <description>Создание уникальных женских образов: от лаконичных коктейльных платьев до сложных свадебных нарядов.</description>
+        <price>1000</price>
+        <category>Индивидуальный пошив</category>
+    </service>
+
+    <service>
+        <id>3</id>
+        <title>Косплей-образы</title>
+        <description>Профессиональное проектирование сложных костюмов любой сложности для фестивалей и съемок.</description>
+        <price>индивидуально</price>
+        <category>Сценический образ</category>
+    </service>
+    <service>
+        <id>4</id>
+        <title>Фурсьюты</title>
+        <description>Высокохудожественные изделия с использованием технологичных полимеров и густого меха.</description>
+        <price>3000</price>
+        <category>Сценический образ</category>
+    </service>
+
+    <service>
+        <id>5</id>
+        <title>Подгон по фигуре</title>
+        <description>Коррекция посадки готовых изделий: изменение длины, подгонка по плечам, талии или бедрам.</description>
+        <price>90</price>
+        <category>Ремонт и сервис</category>
+    </service>
+    <service>
+        <id>6</id>
+        <title>Реставрация и ремонт</title>
+        <description>Замена молний, подкладки, устранение дефектов ткани и обновление фурнитуры.</description>
+        <price>50</price>
+        <category>Ремонт и сервис</category>
+    </service>
+    <service>
+        <id>7</id>
+        <title>Стилизация изделий</title>
+        <description>Техническая доработка ваших идей: добавление вышивки, страз или изменение фасона старой вещи.</description>
+        <price>180</price>
+        <category>Ремонт и сервис</category>
+    </service>
+</services>

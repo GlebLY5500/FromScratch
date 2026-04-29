@@ -1,0 +1,103 @@
+@import '_variables-fonts';
+body{
+    font-family: $FontStraight;
+}
+.services {
+    background-color: $color-bg;
+    font-weight: 100;
+    padding: 80px 20px;
+    color: #fff;
+    min-height: 80vh;
+
+
+    .controls {
+        max-width: 1200px;
+        margin: 0 auto 30px;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+
+    button {
+        background: transparent;
+        border: 1px solid $color-accent;
+        color: $color-accent;
+        padding: 8px 15px;
+        cursor: pointer;
+        transition: $transition-ease;
+
+        &:hover {
+            background: $color-accent;
+            color: $color-blockbg;
+        }
+    }
+}
+
+    .service-card__price {
+        .main-price {
+            font-size: 1.2rem;
+            color: $color-accent;
+            font-weight: bold;
+        }
+        .alt-price {
+            font-size: 0.85rem;
+            opacity: 0.6;
+            margin-top: 5px;
+        }
+    }
+
+
+  &__title {
+    text-align: center;
+    color: $color-accent;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+  }
+
+  &__grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); // Адаптивные колонки
+    gap: 30px;
+  }
+}
+
+.service-card {
+  background-color: $color-blockbg;
+  padding: 30px;
+  border: 1px solid rgba($color-accent, 0.2);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+
+  &:hover {
+    transform: translateY(-10px);
+    border-color: $color-accent;
+  }
+
+  &__category {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $color-accent;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  &__name {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0.8;
+    margin-bottom: 20px;
+  }
+
+  &__price {
+    font-weight: bold;
+    color: $color-accent;
+    font-size: 18px;
+  }
+}
