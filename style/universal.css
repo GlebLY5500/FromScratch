@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Farabee";
   src: url("../fonts/Farabee Regular.ttf") format("truetype");
@@ -26,13 +27,21 @@ header {
   z-index: 100;
   width: 100vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   background-color: #893030;
   padding: 0 20px;
 }
 header .logobox {
   margin: 5px;
+  z-index: 100;
+}
+header .burger {
+  display: none;
+  font-size: 40px;
+}
+header .burger-toggle {
+  display: none;
 }
 header nav {
   margin: 0 40px;
@@ -49,6 +58,36 @@ header nav a {
 header nav a:hover {
   transition: all 0.3s ease;
   color: #F4A460;
+}
+@media (max-width: 768px) {
+  header .burger {
+    display: block;
+  }
+  header .burger::before {
+    content: "☰";
+  }
+  header .burger-toggle:checked ~ .nav {
+    left: 0;
+  }
+  header .burger-toggle:checked ~ .burger::before {
+    content: "✕";
+  }
+  header .nav {
+    margin: 0;
+    z-index: 100;
+    top: 89px;
+    left: 100%;
+    width: 100%;
+    background-color: #702929;
+    position: absolute;
+    transition: all 0.3s ease;
+  }
+  header .nav a {
+    display: block;
+  }
+  header .nav a:nth-child(even) {
+    background-color: #893030;
+  }
 }
 
 .footer {

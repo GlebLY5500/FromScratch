@@ -18,9 +18,17 @@
 main section {
   margin-bottom: 40px;
 }
+main section:first-child {
+  padding-top: 89px;
+}
 main section .banner-main img {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
+}
+@media (max-width: 768px) {
+  main section .banner-main img {
+    content: url(../images/atelie-upscale-vertical.png);
+  }
 }
 main section .banner-main .float-box {
   animation: appear 1s ease-in forwards;
@@ -33,6 +41,7 @@ main section .banner-main .float-box p {
   text-align: center;
   font-size: 30px;
   font-family: "FarabeeStraight", sans-serif;
+  padding: 0 20px;
 }
 main section .banner-main .float-box p a {
   color: #FFFFFF;
