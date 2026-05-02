@@ -14,8 +14,8 @@ body {
 .services {
   background-color: #4A2727;
   font-weight: 100;
-  padding: 80px 20px;
-  color: #fff;
+  padding: 90px 20px;
+  color: #FFFFFF;
   min-height: 80vh;
 }
 .services .controls {
@@ -85,6 +85,7 @@ body {
   margin-bottom: 15px;
 }
 .service-card__text {
+  font-family: "Farabee", sans-serif;
   font-size: 14px;
   line-height: 1.6;
   opacity: 0.8;

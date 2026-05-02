@@ -2,29 +2,25 @@
 const USD_TO_BYN = 3.25; 
 
 async function loadServices() {
-    try {
-        const response = await fetch('data/services.xml');
-        const xmlText = await response.text();
-        const parser = new DOMParser();
-        const xmlDoc = parser.parseFromString(xmlText, "text/xml");
-        const nodes = xmlDoc.getElementsByTagName("service");
+    const response = await fetch('data/services.xml');
+    const xmlText = await response.text();
+    const parser = new DOMParser();
+    const xmlDoc = parser.parseFromString(xmlText, "text/xml");
+    const nodes = xmlDoc.getElementsByTagName("service");
 
-        allServices = Array.from(nodes).map(s => {
-            const val = s.getElementsByTagName("price")[0].textContent;
-            const numericPrice = parseFloat(val) || 0;
+    allServices = Array.from(nodes).map(s => {
+        const val = s.getElementsByTagName("price")[0].textContent;
+        const Price = parseFloat(val)||0;
             
-            return {
-                title: s.getElementsByTagName("title")[0].textContent,
-                desc: s.getElementsByTagName("description")[0].textContent,
-                priceBYN: numericPrice,
-                cat: s.getElementsByTagName("category")[0].textContent
-            };
-        });
+        return {
+            title: s.getElementsByTagName("title")[0].textContent,
+            desc: s.getElementsByTagName("description")[0].textContent,
+            priceBYN: Price,
+            cat: s.getElementsByTagName("category")[0].textContent
+        };
+    });
 
-        renderServices(allServices);
-    } catch (error) {
-        console.error("Ошибка:", error);
-    }
+    renderServices(allServices);
 }
 
 function renderServices(data) {

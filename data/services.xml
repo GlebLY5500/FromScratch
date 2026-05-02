@@ -45,6 +45,7 @@
         <price>50</price>
         <category>Ремонт и сервис</category>
     </service>
+
     <service>
         <id>7</id>
         <title>Стилизация изделий</title>
@@ -52,4 +53,80 @@
         <price>180</price>
         <category>Ремонт и сервис</category>
     </service>
+    <service>
+        <id>8</id>
+        <title>Пошив верхней одежды</title>
+        <description>Пальто, тренчи и демисезонные куртки. Использование натуральной шерсти, кашемира и качественного утеплителя.</description>
+        <price>600</price>
+        <category>Индивидуальный пошив</category>
+    </service>
+
+    <service>
+        <id>9</id>
+        <title>Корсетные изделия</title>
+        <description>Изготовление утягивающих и декоративных корсетов по старинным и современным технологиям.</description>
+        <price>250</price>
+        <category>Индивидуальный пошив</category>
+    </service>
+    <service>
+        <id>10</id>
+        <title>Аксессуары и бутафория</title>
+        <description>Создание масок, крыльев, доспехов из EVA-пены и ворсовых ушек/хвостов для завершения образа.</description>
+        <price>120</price>
+        <category>Сценический образ</category>
+    </service>
+
+    <service>
+        <id>11</id>
+        <title>Работа с кожей и мехом</title>
+        <description>Профессиональный ремонт кожаных курток, перекрой шуб и устранение потертостей на натуральных материалах.</description>
+        <price>200</price>
+        <category>Ремонт и сервис</category>
+    </service>
+    <service>
+        <id>12</id>
+        <title>Машинная вышивка</title>
+        <description>Нанесение логотипов, инициалов или художественных паттернов на любые виды ткани.</description>
+        <price>45</price>
+        <category>Ремонт и сервис</category>
+    </service>
+    
+    <service>
+        <id>13</id>
+        <title>Школьная форма</title>
+        <description>Разработка и пошив стильных капсульных коллекций для школьников: жилеты, юбки, сарафаны и брюки.</description>
+        <price>120</price>
+        <category>Индивидуальный пошив</category>
+    </service>
+    <service>
+        <id>14</id>
+        <title>Пошив нижнего белья</title>
+        <description>Изготовление комплектов из нежного кружева и шелка строго по анатомическим меркам клиента.</description>
+        <price>85</price>
+        <category>Индивидуальный пошив</category>
+    </service>
+
+    <service>
+        <id>15</id>
+        <title>Танцевальные костюмы</title>
+        <description>Пошив эластичных нарядов для бальных танцев, гимнастики или Pole Dance с обильным декором.</description>
+        <price>220</price>
+        <category>Сценический образ</category>
+    </service>
+    <service>
+        <id>16</id>
+        <title>Подгонка свадебного платья</title>
+        <description>Сложная коррекция корсета, многослойных юбок и перенос кружевных аппликаций под вашу фигуру.</description>
+        <price>150</price>
+        <category>Ремонт и сервис</category>
+    </service>
+    
+    <service>
+        <id>17</id>
+        <title>Химчистка и отпаривание</title>
+        <description>Профессиональный уход за деликатными вещами и предпродажная подготовка изделий (удаление катышек, пара).</description>
+        <price>35</price>
+        <category>Ремонт и сервис</category>
+    </service>
+
 </services>

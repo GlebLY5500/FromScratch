@@ -5,8 +5,8 @@ body{
 .services {
     background-color: $color-bg;
     font-weight: 100;
-    padding: 80px 20px;
-    color: #fff;
+    padding: 90px 20px;
+    color: $color-text;
     min-height: 80vh;
 
 
@@ -89,6 +89,7 @@ body{
   }
 
   &__text {
+    font-family: $FontCurvy;
     font-size: 14px;
     line-height: 1.6;
     opacity: 0.8;
